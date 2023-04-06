@@ -75,7 +75,7 @@ select {
 .container {
   padding-inline: 2rem;
   margin-inline: auto;
-  max-width: 80rem;
+  max-width: 55rem;
 }
 
 /* screen reader only */
@@ -86,7 +86,20 @@ select {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clear: rect(0, 0, 0, 0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line*/
   border: 0;
+}
+
+/* Practice */
+.box {
+  background: #256593;
+  padding: 4rem;
+}
+
+.cta /* call-to-action*/ {
+  --gap: 2.5rem;
+  background: #e79f32;
+  padding: 2rem;
+  border-radius: 1rem;
 }
