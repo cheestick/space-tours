@@ -66,7 +66,14 @@
             >
           </div>
 
-          <div style="margin-bottom: 50vh">
+          <div
+            class="flow"
+            style="
+              margin-bottom: 50vh;
+              --flow-space: 4rem;
+              --flow-color: transparent;
+            "
+          >
             <!-- Tabs -->
             <div class="tab-list underline-indicators flex">
               <button
@@ -90,6 +97,17 @@
             </div>
 
             <!-- Dots -->
+            <div class="dot-indicators flex">
+              <button aria-selected="true" class="">
+                <span class="sr-only">Sline Title</span>
+              </button>
+              <button aria-selected="false" class="">
+                <span class="sr-only">Sline Title</span>
+              </button>
+              <button aria-selected="false" class="">
+                <span class="sr-only">Sline Title</span>
+              </button>
+            </div>
 
             <!-- Numbers -->
           </div>
