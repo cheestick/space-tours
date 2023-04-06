@@ -19,7 +19,7 @@
   --fs-200: 0.875rem;
 
   /* font-family */
-  --ff-serif: "Bellafair", serif;
+  --ff-serif: "Bellefair", serif;
   --ff-sans-cond: "Barlow Condensed", sans-serif;
   --ff-sans-normal: "Barlow", sans-serif;
 }
@@ -232,3 +232,32 @@ select {
 /* ---------- */
 /* Components */
 /* ---------- */
+.large-button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 0 2em;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.large-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: hsl(var(--clr-white) / 0.15);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 400ms linear, transform 375ms ease-in-out;
+}
+
+.large-button:hover::after,
+.large-button:focus::after {
+  opacity: 1;
+  transform: scale(1.5);
+}
