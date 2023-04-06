@@ -1,6 +1,16 @@
-/* ------------------- */
+/* ----------------- */
+/* Custom properties */
+/* ----------------- */
+
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+}
+
+/* ----------------- */
 /* Reset */
-/* ------------------- */
+/* ----------------- */
 
 /* https://piccalil.li/blog/a-modern-css-rest/ */
 
@@ -91,15 +101,23 @@ select {
   border: 0;
 }
 
-/* Practice */
-.box {
-  background: #256593;
-  padding: 4rem;
+/* colors */
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
+}
+.bg-accent {
+  background-color: hsl(var(--clr-light));
+}
+.bg-white {
+  background-color: hsl(var(--clr-white));
 }
 
-.cta /* call-to-action*/ {
-  --gap: 2.5rem;
-  background: #e79f32;
-  padding: 2rem;
-  border-radius: 1rem;
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+.text-accent {
+  color: hsl(var(--clr-light));
+}
+.text-white {
+  color: hsl(var(--clr-white));
 }
