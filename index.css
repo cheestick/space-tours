@@ -180,12 +180,12 @@ select {
 
   .grid-container > *:first-child {
     grid-column: 2;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
 
   .grid-container > *:last-child {
     grid-column: 3;
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
   }
 
   .grid-container--home {
@@ -414,4 +414,32 @@ select {
 .numered-indicators > [aria-selected="true"] {
   color: hsl(var(--clr-dark));
   background-color: hsl(var(--clr-white) / 1);
+}
+
+/* ------------- */
+/* Page specific */
+/* ------------- */
+
+body {
+  background-size: cover;
+  background-position: bottom center;
+  /* background-repeat: no-repeat; */
+}
+
+/* home */
+.home {
+  background-image: url("./assets/home/background-home-mobile.jpg");
+}
+
+@media (min-width: 35rem) {
+  /* home */
+  .home {
+    background-image: url("./assets/home/background-home-tablet.jpg");
+  }
+}
+@media (min-width: 45rem) {
+  /* home */
+  .home {
+    background-image: url("./assets/home/background-home-desktop.jpg");
+  }
 }
