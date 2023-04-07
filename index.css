@@ -135,6 +135,10 @@ select {
   gap: var(--gap, 1rem);
 }
 
+.d-block {
+  display: block;
+}
+
 /* .flow > *:not(:first-child)
   .flow > *:not(:last-child) */
 .flow > * + * {
